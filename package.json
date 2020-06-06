@@ -1,0 +1,11 @@
+{
+  "name": "Naesungbot-v3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Naesung/Naesungbot-v3.git",
+  "author": "Naesung <minseo0388@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}
