@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js')
-const admin = require('../admin')
+//const admin = require('../admin')
 module.exports.aliases = ['userinfo', 'iu']
 module.exports.run = (client, msg) => {
     if (admin.check(msg.author.id)) {

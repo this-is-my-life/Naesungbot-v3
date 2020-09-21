@@ -1,5 +1,4 @@
 const { MessageEmbed } = require('discord.js')
-const client = require('../client').client
 const request = require('request')
 module.exports.aliases = ['minecraft', 'mc']
 module.exports.run = (client, msg) => {

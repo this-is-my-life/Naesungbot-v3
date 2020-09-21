@@ -9,4 +9,4 @@ module.exports.run = (client, msg) => {
     msg.guild.edit({
         name: guild
     })
-},
+}

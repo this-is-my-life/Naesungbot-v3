@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js')
+/*const { MessageEmbed } = require('discord.js')
 const osu = require('node-osu')
 const api = new osu.Api(`${config.osu}`, {
     notFoundAsError: true,
@@ -23,4 +23,4 @@ module.exports.run = (client, msg) => {
             .setFooter('Request By' + msg.author.tag, msg.author.avatarURL)
         msg.channel.send(embed)
     })
-}
+}*/

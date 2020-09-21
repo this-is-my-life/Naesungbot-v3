@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const client = require('../client').client
 module.exports.aliases = ['ban', 'b']
 module.exports.run = (client, msg) => {
     const args = msg.content.split(' ')
