@@ -1,6 +1,6 @@
 {
   "name": "naesungbot-v3",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -22,5 +22,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ]
 }
