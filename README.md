@@ -12,7 +12,7 @@ pmh-only, Naesung, DPS0340(With Source)
 - [x] hangang.js
 - [x] info.js
 - [x] invite.js
-- [ ] kick.js
+- [x] kick.js
 - [ ] melon.js
 - [ ] minecraft.js
 - [ ] mute.js
