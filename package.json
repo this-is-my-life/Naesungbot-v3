@@ -13,7 +13,7 @@
     "melon-chart-api": "^1.1.4",
     "naesungmath": "^1.0.0",
     "node-osu": "^2.2.0",
-    "request": "^2.88.2"
+    "superagent": "^6.1.0"
   },
   "description": "The powerful bot.",
   "bugs": {

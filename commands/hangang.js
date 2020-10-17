@@ -1,24 +1,23 @@
 const { MessageEmbed } = require('discord.js')
-const request = require('request')
-module.exports.aliases = ['�Ѱ�', 'hangang']
-module.exports.run = (client, msg) => {
+const { get } = require('superagent')
+
+module.exports.aliases = ['한강', 'hangang']
+
+/**
+ * @param {import('../classes/Client')} client
+ * @param {import('discord.js').Message} msg
+ */
+module.exports.run = async (_, msg) => {
   const url = 'http://hangang.dkserver.wo.tc/'
-  request(url, function (err, response, body) {
-    if (err) {
-      return msg.reply('An error has occurred. | Cannot request JSON from server.')
-    }
-    body = JSON.parse(body)
-    if (body.result) {
-      if (body.temp && body.time) {
-        const embed = new MessageEmbed()
-          .setColor('#dbe1f0')
-          .setTimestamp()
-          .setTitle('Temperature of Han River')
-          .setURL('https://www.wpws.kr/hangang/')
-          .addField('Temperature of River', body.temp, true)
-          .addField('Final confirmation time', body.time, true)
-        msg.channel.send(embed)
-      }
-    }
-  })
+  const res = await get(url)
+
+  if (!res.body) return msg.reply('An error has occurred. | Cannot request JSON from server.')
+  const embed = new MessageEmbed()
+    .setColor(0xdbe1f0)
+    .setTimestamp()
+    .setTitle('Temperature of Han River')
+    .setURL('https://www.wpws.kr/hangang/')
+    .addField('Temperature of River', JSON.parse(res.text).temp, true)
+    .addField('Final confirmation time', JSON.parse(res.text).time, true)
+  msg.channel.send(embed)
 }
