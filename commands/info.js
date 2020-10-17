@@ -1,5 +1,10 @@
 const { MessageEmbed } = require('discord.js')
 module.exports.aliases = ['info', 'i']
+
+/**
+ * @param {import('../classes/Client')} client
+ * @param {import('discord.js').Message} msg
+ */
 module.exports.run = (client, msg) => {
   const infoembed = new MessageEmbed()
     .setTitle('Information of Naesungbot')
