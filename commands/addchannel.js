@@ -1,12 +1,12 @@
-const { MessageEmbed } = require('discord.js')
+// const { MessageEmbed } = require('discord.js')
 module.exports.aliases = ['addchannel', 'ac']
-module.exports.run = (client, msg) => {
-    if (!msg.member.hasPermission('MANAGE_CHANNELS')) {
-        msg.reply('You have no permission!')
-        return
-    }
-    const channel = stringhandler.argsParse('Ã¤³Î Ãß°¡', command)[0]
-    msg.guild.channels.create(channel, 'text')
-        .then(console.log)
-        .catch(console.error)
-}
+// module.exports.run = (client, msg) => {
+//   if (!msg.member.hasPermission('MANAGE_CHANNELS')) {
+//     msg.reply('You have no permission!')
+//     return
+//   }
+//   const channel = stringhandler.argsParse('Ã¤ï¿½ï¿½ ï¿½ß°ï¿½', command)[0]
+//   msg.guild.channels.create(channel, 'text')
+//     .then(console.log)
+//     .catch(console.error)
+// }

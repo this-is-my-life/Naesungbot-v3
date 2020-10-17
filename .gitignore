@@ -115,13 +115,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+.vs/
+package-lock.json
 settings.json
-.vs/Naesungbot-v3/config/applicationhost.config
-.vs/Naesungbot-v3/v16/.suo
-.vs/ProjectSettings.json
-.vs/slnx.sqlite
-.vs/VSWorkspaceState.json
-.vs/Naesungbot-v3/v16/.suo
-.vs/slnx.sqlite
-.vs/Naesungbot-v3/v16/.suo
-.vs/Naesungbot-v3/v16/.suo

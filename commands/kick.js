@@ -1,13 +1,13 @@
-const { MessageEmbed } = require('discord.js')
+// const { MessageEmbed } = require('discord.js')
 module.exports.aliases = ['kick', 'k']
-module.exports.run = (client, msg) => {
-   const args = msg.content.split(' ')
-   if (!msg.member.hasPermission('KICK_MEMBERS')) return
-   if (args[0] === 'help') {
-     msg.reply(`${config.prefix}kick <À¯Àú ¸Ç¼Ç>`)
-   return
-}
-const kUser = msg.guild.member(msg.mentions.users.first() || msg.guild.members.get(args[0]))
-msg.guild.members.fetch(kUser).kick('¾øÀ½')
-msg.channel.send(kUser + ' À¯Àú¸¦ ¼º°øÀûÀ¸·Î Å± Çß½À´Ï´Ù')
-}
+// module.exports.run = (client, msg) => {
+//   const args = msg.content.split(' ')
+//   if (!msg.member.hasPermission('KICK_MEMBERS')) return
+//   if (args[0] === 'help') {
+//     msg.reply(`${config.prefix}kick <ï¿½ï¿½ï¿½ï¿½ ï¿½Ç¼ï¿½>`)
+//     return
+//   }
+//   const kUser = msg.guild.member(msg.mentions.users.first() || msg.guild.members.get(args[0]))
+//   msg.guild.members.fetch(kUser).kick('ï¿½ï¿½ï¿½ï¿½')
+//   msg.channel.send(kUser + ' ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å± ï¿½ß½ï¿½ï¿½Ï´ï¿½')
+// }

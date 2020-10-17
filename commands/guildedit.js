@@ -1,12 +1,12 @@
-const { MessageEmbed } = require('discord.js')
+// const { MessageEmbed } = require('discord.js')
 module.exports.aliases = ['guildedit', 'ge']
-module.exports.run = (client, msg) => {
-    if (!msg.member.hasPermission('MANAGE_GUILD')) {
-        msg.reply('You have no permission!')
-        return
-    }
-    const guild = stringhandler.argsParse('±æµå ¼öÁ¤', command)[0]
-    msg.guild.edit({
-        name: guild
-    })
-}
+// module.exports.run = (client, msg) => {
+//   if (!msg.member.hasPermission('MANAGE_GUILD')) {
+//     msg.reply('You have no permission!')
+//     return
+//   }
+//   const guild = stringhandler.argsParse('ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', command)[0]
+//   msg.guild.edit({
+//     name: guild
+//   })
+// }

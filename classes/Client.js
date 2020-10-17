@@ -12,7 +12,7 @@ class mClient extends Client {
     if (!this.settings.prefix) this.settings.prefix = 'n>'
 
     this.login(this.settings.token)
-    
+
     const cmdRoot = path() + '/commands/'
     this.commands = []
     readdir(cmdRoot, (err, files) => {
@@ -26,9 +26,8 @@ class mClient extends Client {
   }
 
   regEvent (type, cb) {
-    this.on(type, (...args) => {
-      cb(this, ...args)
-    })
+    // eslint-disable-next-line standard/no-callback-literal
+    this.on(type, (...args) => cb(this, ...args))
   }
 }
 

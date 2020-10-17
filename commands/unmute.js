@@ -1,11 +1,10 @@
-const { MessageEmbed } = require('discord.js')
 module.exports.aliases = ['unmute', 'um']
-module.exports.run = (client, msg) => {
-    const args = stringhandler.argsParse('unmute', 'command')
-    const tomute = msg.guild.member(msg.mentions.users.first() || msg.guild.members.get(args[1]))
-    if (!tomute) return msg.reply('À¯Àú¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù')
-    if (tomute.hasPermission('MANAGE_MESSAGES')) return msg.reply('You have no permission!')
-    const muterole = msg.guild.roles.cache.find('name', 'muted')
-    tomute.removeRole(muterole.id)
-    msg.reply(`<@${tomute.id}> À» ¾ð¹ÂÆ® Çß½À´Ï´Ù`)
-}
+// module.exports.run = (client, msg) => {
+//   const args = stringhandler.argsParse('unmute', 'command')
+//   const tomute = msg.guild.member(msg.mentions.users.first() || msg.guild.members.get(args[1]))
+//   if (!tomute) return msg.reply('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½')
+//   if (tomute.hasPermission('MANAGE_MESSAGES')) return msg.reply('You have no permission!')
+//   const muterole = msg.guild.roles.cache.find('name', 'muted')
+//   tomute.removeRole(muterole.id)
+//   msg.reply(`<@${tomute.id}> ï¿½ï¿½ ï¿½ï¿½ï¿½Æ® ï¿½ß½ï¿½ï¿½Ï´ï¿½`)
+// }

@@ -8,4 +8,3 @@ module.exports = (client, msg) => {
   const target = client.commands.find((c) => c.aliases.includes(query.cmd))
   if (target) target.run(client, msg)
 }
-
