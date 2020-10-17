@@ -9,7 +9,7 @@ module.exports.aliases = ['ban', 'b']
 module.exports.run = async (client, msg) => {
   const { args } = msg.query
   if (!msg.member.hasPermission('BAN_MEMBERS')) return msg.reply('You have no permission!')
-  if (args.length < 2 || args[0] === 'help') return msg.reply(`: ${client.settings.prefix}ban @mention reason`)
+  if (args.length < 2 || args[0] === 'help') return msg.reply(`${client.settings.prefix}ban @mention reason`)
 
   const bUser = msg.guild.members.resolve(msg.mentions.members.first().id || args[0])
   if (!bUser) return msg.channel.send('User not found')
