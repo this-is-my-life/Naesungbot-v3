@@ -10,7 +10,7 @@ pmh-only, Naesung, DPS0340(With Source)
 - [x] clear.js
 - [x] guildedit.js
 - [x] hangang.js
-- [ ] info.js
+- [x] info.js
 - [ ] invite.js
 - [ ] kick.js
 - [ ] melon.js
