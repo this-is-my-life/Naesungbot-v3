@@ -13,7 +13,7 @@ pmh-only, Naesung, DPS0340(With Source)
 - [x] info.js
 - [x] invite.js
 - [x] kick.js
-- [ ] melon.js
+- [x] melon.js
 - [ ] minecraft.js
 - [ ] mute.js
 - [ ] osu.js
