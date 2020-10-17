@@ -2,4 +2,27 @@
 The powerful bot.
 
 #  Developers
-PMH-only, Naesung, DPS0340(With Source)
+pmh-only, Naesung, DPS0340(With Source)
+
+# usable
+- [x] addchannel.js
+- [ ] ban.js
+- [ ] clear.js
+- [ ] guildedit.js
+- [ ] hangang.js
+- [ ] info.js
+- [ ] invite.js
+- [ ] kick.js
+- [ ] melon.js
+- [ ] minecraft.js
+- [ ] mute.js
+- [ ] osu.js
+- [ ] ping.js
+- [ ] randomcolor.js
+- [ ] roleinfo.js
+- [ ] serverinfo.js
+- [ ] unban.js
+- [ ] unmute.js
+- [ ] uptime.js
+- [ ] userinfo.js
+- [ ] userlist.js
